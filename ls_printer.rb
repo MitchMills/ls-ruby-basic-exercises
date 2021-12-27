@@ -1,11 +1,14 @@
-number_of_lines = nil
-
 loop do
-  puts "How many output lines do you want? Enter a number >= 3:"
-  number_of_lines = gets.to_i
+  puts ">> How many output lines do you want? Enter a number >= 3. (Enter Q to quit):"
+  number_of_lines = gets
 
-  break if number_of_lines >= 3
-  puts "That's not enough lines."
+  if number_of_lines.chomp.downcase == 'q'
+    break
+  elsif
+    number_of_lines.to_i >= 3
+    number_of_lines.to_i.times { puts "Launch School is the best!" }
+  else
+    puts ">> That's not enough lines."
+  end
+
 end
-
-number_of_lines.times { puts "Launch School is the best!" }
