@@ -1,7 +1,9 @@
-number = 42
+stoplight = ['green', 'yellow', 'red'].sample
 
-if number
-  puts "My favorite number is #{number}."
-else
-  puts "I don't have a favorite number."
+puts stoplight
+
+case stoplight
+when 'green'  then puts 'Go!'
+when 'yellow' then puts 'Slow down!'
+else               puts 'Stop!'
 end
