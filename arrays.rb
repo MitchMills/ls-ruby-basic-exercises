@@ -1,5 +1,4 @@
-colors = ['red', 'yellow', 'purple', 'green']
+array1 = [1, 5, 9]
+array2 = [1, 9, 5]
 
-colors.each do |color| 
-  puts "I'm the color #{color}!"
-end
+puts array1 == array2
