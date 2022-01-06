@@ -1,9 +1,14 @@
-numbers = {
-  high:   100,
-  medium: 50,
-  low:    10
+car_hash = {
+  type:  'sedan',
+  color: 'blue',
+  year:  2003
 }
 
-numbers.each do |key, value|
-  puts "A #{key} number is #{value}."
-end
+car_array = [
+  [:type, 'sedan'],
+  [:color, 'blue'],
+  [:year, 2003]
+]
+
+puts car_hash[:color]
+puts car_array[1][1]
