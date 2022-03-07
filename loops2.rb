@@ -1,5 +1,5 @@
 def greeting
-  puts 'Hello!'
+  puts "Hello!"
 end
 
 number_of_greetings = 2
