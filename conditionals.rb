@@ -1,9 +1,5 @@
-stoplight = ['green', 'yellow', 'red'].sample
+sun = ['visible', 'hidden'].sample
+puts sun
 
-puts stoplight
-
-case stoplight
-when 'green'  then puts 'Go!'
-when 'yellow' then puts 'Slow down!'
-else               puts 'Stop!'
-end
+puts "The sun is so bright!" if sun == "visible"
+puts "The clouds are blocking the sun!" unless sun == "visible"
