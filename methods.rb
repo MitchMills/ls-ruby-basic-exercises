@@ -1,16 +1,10 @@
-def name(names_array)
-  names_array.sample
+def dog(name)
+  return name
 end
 
-def activity(activities_array)
-  activities_array.sample
+def cat(name)
+  return name
 end
 
-def sentence(name, activity)
-  "#{name} went #{activity} today!"
-end
-
-names = ['Dave', 'Sally', 'George', 'Jessica']
-activities = ['walking', 'running', 'cycling']
-
-puts sentence(name(names), activity(activities))
+puts "The dog's name is #{dog("Spot")}."
+puts "The cat's name is #{cat("Ginger")}."
