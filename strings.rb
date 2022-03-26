@@ -1,3 +1,4 @@
-colors = 'blue boredom yellow'
+colors = 'blue boredom pink yellow orange'
+
+puts colors.include?('yellow')
 puts colors.include?('red')
-puts colors.include?('purple')
