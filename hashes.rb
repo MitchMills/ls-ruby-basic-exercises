@@ -1,14 +1,10 @@
-car_hash = {
-  type:  'sedan',
-  color: 'blue',
-  year:  2003
+car = {
+  type:   'sedan',
+  color:  'blue',
+  year:   2003
 }
+p car
 
-car_array = [
-  [:type, 'sedan'],
-  [:color, 'blue'],
-  [:year, 2003]
-]
-
-puts car_hash[:color]
-puts car_array[1][1]
+car_array = car.to_a
+p car
+p car_array
