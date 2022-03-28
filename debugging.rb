@@ -1,16 +1,18 @@
-player = { strength: 10, dexterity: 10, charisma: 10, stamina: 10 }
+colors = ['red', 'yellow', 'purple', 'green', 'dark blue', 'turquoise', 'silver', 'black']
+things = ['pen', 'mouse pad', 'coffee mug', 'sofa', 'surf board', 'training mat', 'notebook']
 
-character_classes = {
-  warrior: { strength:  20 },
-  thief:   { dexterity: 20 },
-  scout:   { stamina:   20 },
-  mage:    { charisma:  20 }
-}
+# colors.shuffle!
+# things.shuffle!
 
-puts 'Please type your class (warrior, thief, scout, mage):'
-input = gets.chomp.downcase.to_sym
+i = 0
+loop do
+  break if i == things.length
 
-player.merge!(character_classes[input])
+  if i == 0
+    puts 'I have a ' + colors[i] + ' ' + things[i] + '.'
+  else
+    puts 'And a ' + colors[i] + ' ' + things[i] + '.'
+  end
 
-puts 'Your character stats:'
-puts player
+  i += 1
+end
