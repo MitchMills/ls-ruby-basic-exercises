@@ -1,12 +1,12 @@
 a = 7
 array = [1, 2, 3]
 
-def my_value(ary, n)
+def my_value(ary)
   ary.each do |b|
-    n += b
-    puts n
+    a += b
+    puts a
   end
 end
 
-my_value(array, a)
+my_value(array)
 puts a
