@@ -7,3 +7,4 @@ def tricky_number
 end
 
 puts tricky_number
+
