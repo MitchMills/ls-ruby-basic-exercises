@@ -1,10 +1,7 @@
-car = {
-  type:   'sedan',
-  color:  'blue',
-  year:   2003
-}
-p car
+car = [
+  [:type, "sedan"],
+  [:color, "blue"],
+  [:year, 2003]
+]
 
-car_array = car.to_a
 p car
-p car_array
