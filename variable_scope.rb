@@ -1,12 +1,57 @@
+### WHAT'S MY VALUE? PART 7
+
+
+
+
+### WHAT'S MY VALUE? PART 6
+# a = 7
+
+# def my_value(b)
+#   b = a + a
+# end
+
+# my_value(a)
+# puts a
+
+=begin
+On line 1, local variable 'a' is initialized to an integer object with a value of 7.
+
+On line 8, the method 'my_value' is called and 'a' is passed in as the argument. Method variable 'b' is set to reference the same integer object as 'a'.
+
+Within the method, on line 4, 'b' is reassigned to the result of the expression 'a + a'. However, since the variable 'a' was initialized outside the method, it cannot be accessed inside the method. The result is an error.
+=end
+
+
+### WHAT'S MY VALUE? PART 5
+# a = "Xyzzy"
+
+# def my_value(b)
+#   b = 'yzzyX'
+# end
+
+# my_value(a)
+# puts a
+
+=begin
+On line 1 local variable 'a' is initialized and assigned to a string object with the value "Xyzzy"
+
+On line 7 the 'my_value' method is called and 'a' is passed in as the argument. On line 3, method variable 'b' is assigned to point to the same object as 'a'.
+
+Within the method, on line 4, 'b' is reassigned to point to a new string object with the value 'yzzyX'. This reassignment of 'b' does not affect 'a'. 'a' still points to the original string object 'Xyzzy'.
+
+Therefore when the 'puts' method is called on line 8 with 'a' passed in as the argument, "Xyzzy" will be output to the screen, and the method will return 'nil'.
+=end
+
+
 ### WHAT'S MY VALUE? PART 4
-a = "Xyzzy"
+# a = "Xyzzy"
 
-def my_value(b)
-  b[2] = '-'
-end
+# def my_value(b)
+#   b[2] = '-'
+# end
 
-my_value(a)
-puts a
+# my_value(a)
+# puts a
 
 =begin
 On line 2, local variable 'a' is initialized and assigned to a string object with the value "Xyzzy".
