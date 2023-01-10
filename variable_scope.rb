@@ -1,7 +1,32 @@
+### WHAT'S MY VALUE? PART 8
+array = [1, 2, 3]
+
+array.each do |element|
+  a = element
+end
+
+puts a
+
+
 ### WHAT'S MY VALUE? PART 7
+# a = 7
+# array = [1, 2, 3]
 
+# array.each do |element|
+#   a = element
+# end
 
+# puts a
 
+=begin
+On line 1, local variable 'a' is initialized and assigned to an integer object with a value of 7. On line 2, local variable 'array' is initialized and assigned to an array object containing the integers 1, 2, and 3.
+
+On line 4, the 'each' method is called on 'array'. This method iterates over the array object. Each element in the array is passed into the block in turn. The block parameter 'element' is assigned to point at each successive element.
+
+On line 5, 'a' is reassigned to the value referenced by 'element'. On the final iteration of 'each', 'a' is thus reassigned to the value of the last element in 'array'.
+
+On line 8, puts is called and 'a' is passed in as the argument. 'puts' will output 3 to the screen and return 'nil'.
+=end
 
 ### WHAT'S MY VALUE? PART 6
 # a = 7
