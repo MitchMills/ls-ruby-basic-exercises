@@ -1,11 +1,66 @@
-### WHAT'S MY VALUE? PART 8
+### WHAT'S MY VALUE? PART 10
+a = 7
 array = [1, 2, 3]
 
-array.each do |element|
-  a = element
+def my_value(ary)
+  ary.each do |b|
+    a += b
+  end
 end
 
+my_value(array)
 puts a
+
+
+### WHAT'S MY VALUE? PART 9
+# a = 7
+# array = [1, 2, 3,]
+
+# array.each do |a|
+#   a += 1
+# end
+
+# puts a
+
+=begin
+On line 1 local variable 'a' is initialized and assigned to an integer with value 7.
+
+On line 2 local variable 'array' is initialized and assigned to an array object containing three integers with values 1, 2, and 3.
+
+On line 4 the 'each' method is called on 'array' and a 'do..end' block is passed in as an argument with one parameter 'a'.
+
+The 'each' method iterates through 'array', passing in each element in turn to the block. On each iteration 'a' is set to reference the value of the passed-in element
+
+Within the block, on line 5, 'a' is reassigned to the value of the expression 'a += 1'. After each iteration of the block, 'each' returns the calling object 'array'.
+
+On line 8, the 'puts' method is called and 'a' is passed in as an argument. This will output the integer 7 to the screen and return 'nil'.
+
+The local variable 'a' that was initialized and assigned on line 1 is not affected by the 'each' method called on line 4 due to variable shadowing. Because the name of the parameter for the block is the same as the name of the local variable initialized outside the block, the outer-scope variable 'a' is not accessible within the block.
+
+
+=end
+
+
+### WHAT'S MY VALUE? PART 8
+# array = [1, 2, 3]
+
+# array.each do |element|
+#   a = element
+# end
+
+# puts a
+
+=begin
+On line 1  we initialize local variable 'array' and set its value to an array object containing three integers with values 1, 2, and 3.
+
+On line 3 the 'each' method is called on 'array' and a 'do..end' block is passed in as an argument with one parameter 'element'.
+
+The 'each' method iterates over the calling object 'array'. Each element of 'array' is passed into the block in turn and 'element' is set to reference the value of that passed-in element.
+
+Within the block, on line 4, local variable 'a' is initialized and set to the value referenced by 'element'. After each iteration, 'each' returns the calling object 'array'.
+
+On line 7 the 'puts' method is called and 'a' is passed in as an argument. This will raise an error (undefined local variable), because 'a' was initialized within the 'each' method's 'do..end' block. Local variables initialized in an inner scope cannot be accessed in the outer scope.
+=end
 
 
 ### WHAT'S MY VALUE? PART 7
