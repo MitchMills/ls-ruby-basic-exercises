@@ -1,4 +1,11 @@
-hash1 = {shoes: "nike", "hat" => "adidas", :hoodie => true}
-hash2 = {"hat" => "adidas", :shoes => "nike", hoodie: true}
+a = 7
+array = [1, 2, 3]
 
-p hash1 == hash2
+def my_value(ary)
+  ary.each do |b|
+    a += b
+  end
+end
+
+my_value(array)
+puts a
