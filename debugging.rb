@@ -1,16 +1,90 @@
-player =  { strength: 10, dexterity: 10,  charisma: 10, stamina: 10 }
+### 7 ACCOUNT BALANCE
+balance = 0
 
-character_classes = {
-  warrior:  { strength:   20 },
-  thief:    { dexterity:  20 },
-  scout:    { stamina:    20 },
-  mage:     { charisma:   20 }  
+january = {
+  income: [ 1200, 75 ],
+  expenses: [ 650, 140, 33.2, 100, 26.9, 78 ]
 }
 
-puts 'Please type your class (warrior, thief, scout, mage):'
-input = gets.chomp.downcase.to_sym
+february = {
+  income: [ 1200 ],
+  expenses: [ 650, 140, 320, 46.7, 122.5 ]
+}
 
-player.merge!(character_classes[input])
+march = {
+  income: [ 1200, 10, 75 ],
+  expenses: [ 650, 140, 350, 12, 59.9, 2.5 ]
+}
 
-puts 'Your character stats:'
-puts player
+def calculate_balance(month)
+  plus = month[:income].sum
+  minus = month[:expenses].sum
+  plus - minus
+end
+
+[january, february, march].each do |month|
+  balance += calculate_balance(month)
+end
+
+puts balance
+
+### 6 CONFUCIUS SAYS
+# def get_quote(person)
+#   case person
+#   when 'Yoda'       then 'There is no try.'
+#   when 'Confucius'  then 'I hear and I forget.'
+#   when 'Einstein'   then 'Do not worry...'
+#   end
+# end
+
+# puts 'Confucius says:'
+# puts '"' + get_quote('Confucius') + '"'
+
+### 5 EVEN NUMBERS
+# numbers = [5, 2, 9, 6, 3, 1, 8]
+
+# even_numbers = numbers.select do |n|
+#   n.even?
+# end
+
+# p even_numbers
+
+### 4 PETS
+# pets = { cat: 'fluffy', dog: ['sparky', 'fido'], fish: 'oscar' }
+# p pets
+
+# pets[:dog] << 'bowser'
+# p pets
+
+### 3 MULTIPLY BY FIVE
+# def multiply_by_five(n)
+#   n * 5
+# end
+
+# print "Enter a number: "
+# number = gets.chomp.to_i
+
+# puts "The result is #{multiply_by_five(number)}!"
+
+### 2 WEATHER FORECAST
+# def predict_weather
+#   sunshine = [true, false].sample
+#   p sunshine
+#   if sunshine
+#     puts "Today's weather will be sunny!"
+#   else
+#     puts "Today's weather will be cloudy!"
+#   end
+# end
+
+# predict_weather
+
+### 1 READING ERROR MESSAGES
+# def find_first_nonzero_among(numbers)
+#   numbers.each do |n|
+#     return n if n.nonzero?
+#   end
+# end
+
+# p find_first_nonzero_among([0, 0, 1, 0, 2, 0])
+# p find_first_nonzero_among([1])
